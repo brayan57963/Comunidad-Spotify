@@ -1,0 +1,167 @@
+
+head{
+    background: black;
+}
+
+.header{
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    bottom: 5px;
+    border-bottom: 1px solid;
+}
+
+.logo{
+    margin-left:-20px;
+}
+
+.container{
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.container .btn-menu .logo{
+    float: left;
+    line-height: 10px;
+}
+
+.container .btn-menu label{
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+    cursor: pointer;
+    margin-left: -70px;
+}
+
+#btn-menu{
+    display: none;
+}
+
+.container-menu{
+    position: absolute;
+    background: rgb(0,0,0,0.5);
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    transition: all 500ms ease;
+    opacity: 0;
+    visibility: hidden;
+}
+
+#btn-menu:checked ~.container-menu{
+    opacity: 1;
+    visibility: visible;
+}
+
+.cont-menu{
+    width: 100%;
+    max-width: 250px;
+    background: #1c1c1c;
+    height: 100vh;
+    position: relative;
+    transition: all 500ms ease;
+    transform: translateX(-100%);
+}
+
+#btn-menu:checked ~.container-menu .cont-menu{
+    transform: translateX(0%);
+}
+
+.cont-menu nav{
+    transform: translateY(15%);
+}
+
+.cont-menu nav a{
+    display: block;
+    text-decoration: none;
+    padding: 20px;
+    color: #c7c7c7;
+    border-left: 5px solid transparent;
+    transition: all 400ms ease;
+}
+
+.cont-menu nav a:hover{
+    border-left: 5px solid #c7c7c7;
+    background: #1f1f1f;
+}
+
+.cont-menu label{
+    position: absolute;
+    right: 5px;
+    top: 10px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+
+
+body {
+    background: linear-gradient(to bottom, green, black);
+    padding: 20px;
+    margin: 5px;
+    color: white;
+    font-family: Arial;
+    
+}
+
+@font-face {
+    font-family: Arial;
+    src: url(./fuentes/gotham-medium.ttf);
+}
+
+#boton {
+    background: black;
+    padding: 3px;
+    border-radius: 8px;
+}
+
+#formulario {
+    background: green;
+    color: white;
+    padding: 15px;
+    border-radius: 8px;
+
+}
+
+#join {
+    background: green;
+    color: white;
+    padding: 15px;
+    border-radius: 8px; 
+}
+
+div a {
+    color: white;
+    text-decoration: none;
+}
+h5{
+    text-align: center;
+}
+
+#comparacion{
+    border: 2px solid rgb(0, 0, 0);
+    border-collapse: collapse;
+    padding: 25px;
+    background: black;
+}
+
+th{
+    border: solid 2px white;
+    border-collapse: collapse;
+    padding: 2px;
+}
+
+td{
+    border: solid 2px white;
+    border-collapse: collapse;
+    padding: 2px;
+}
+
+tr:hover{
+    background: rgba(0, 169, 0, 0.481);
+}
